@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "dev",
+    "init:up": "npm install | npm run migration:up",
+    "migration:up": "npx sequelize-cli db:migrate",
     "dev": "nodemon index.js"
   },
   "repository": {
